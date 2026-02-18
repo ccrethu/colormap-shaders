@@ -3,6 +3,9 @@ float colormap_h(float x) {
 }
 
 float colormap_s(float x) {
+	if (x < 0.0) {
+		return 1.0;
+	}
 	return 1.0;
 }
 
