@@ -3,7 +3,7 @@
  * Do not edit manually.
  */
 #pragma once
-#include "../../colormap.h"
+#include <colormap/colormap.h>
 
 namespace colormap
 {
@@ -25,7 +25,7 @@ private:
 		#endif
 
 		#define float local_real_t
-		#include "../../../../shaders/glsl/IDL_Eos_B.frag"
+		#include <colormap/shaders/glsl/IDL_Eos_B.frag>
 		#undef float
 
 		#if defined(__clang__)
